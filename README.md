@@ -339,7 +339,7 @@ def get_augmentation(category: str):
 | Paper writing — Abstract, Intro, Results | ✅ Primary | ✅ Review |
 | Paper writing — Related Work, Method, Conclusion | ✅ Review | ✅ Primary |
 | Pipeline diagrams & figures | ✅ Primary | ✅ Review |
-| Repository & README | ✅ Co-author | ✅ Primary |
+| Repository & README | ✅ Primary | ✅ Co-Author |
 
 Both members contributed equally to overall experimental design, result interpretation, and paper revision.
 
