@@ -391,7 +391,7 @@ The Drive folder contains the following result files:
 @misc{saif2025continualssl,
   title   = {Continual Self-Supervised Pretraining for Industrial Anomaly Localization},
   author  = {Saif, Rafay and Aziz, Umar},
-  year    = {2025},
+  year    = {2026},
   note    = {MSc Project, University of Verona — Self-Supervised and Representation Learning},
   url     = {https://github.com/rafay-840/Continual-Self-Supervised-Pretraining-for-Industrial-Anomaly-Localization}
 }
