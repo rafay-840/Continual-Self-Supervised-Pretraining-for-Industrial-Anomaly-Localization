@@ -1,0 +1,54 @@
+{
+  "strategy": "naive_continual",
+  "task_stream": [
+    "bottle",
+    "cable",
+    "leather"
+  ],
+  "epochs_per_task": 300,
+  "bwt": -0.06329870778896257,
+  "records": [
+    {
+      "trained_through_task": "bottle",
+      "trained_through_idx": 0,
+      "eval_category": "bottle",
+      "auroc": 1.0,
+      "pro": 0.9023842975924914
+    },
+    {
+      "trained_through_task": "cable",
+      "trained_through_idx": 1,
+      "eval_category": "bottle",
+      "auroc": 1.0,
+      "pro": 0.8978134549047634
+    },
+    {
+      "trained_through_task": "cable",
+      "trained_through_idx": 1,
+      "eval_category": "cable",
+      "auroc": 0.7554347826086956,
+      "pro": 0.8121003036254344
+    },
+    {
+      "trained_through_task": "leather",
+      "trained_through_idx": 2,
+      "eval_category": "bottle",
+      "auroc": 0.9880952380952381,
+      "pro": 0.8895961466971891
+    },
+    {
+      "trained_through_task": "leather",
+      "trained_through_idx": 2,
+      "eval_category": "cable",
+      "auroc": 0.6407421289355323,
+      "pro": 0.7563357721409062
+    },
+    {
+      "trained_through_task": "leather",
+      "trained_through_idx": 2,
+      "eval_category": "leather",
+      "auroc": 0.9969429347826086,
+      "pro": 0.9046966954673086
+    }
+  ]
+}

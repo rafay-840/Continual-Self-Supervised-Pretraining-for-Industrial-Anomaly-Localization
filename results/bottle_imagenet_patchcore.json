@@ -1,0 +1,9 @@
+{
+  "category": "bottle",
+  "strategy": "imagenet",
+  "checkpoint_tag": null,
+  "auroc": 1.0,
+  "pro": 0.8955387338271875,
+  "n_test_images": 83,
+  "n_anomalous": 63
+}

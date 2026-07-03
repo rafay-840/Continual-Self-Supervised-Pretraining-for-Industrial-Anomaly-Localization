@@ -1,0 +1,9 @@
+{
+  "category": "leather",
+  "strategy": "simclr",
+  "checkpoint_tag": "latest_v3",
+  "auroc": 0.8274456521739132,
+  "pro": 0.7012391908721626,
+  "n_test_images": 124,
+  "n_anomalous": 92
+}

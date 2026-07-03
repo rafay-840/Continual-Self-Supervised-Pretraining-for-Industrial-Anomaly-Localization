@@ -1,0 +1,9 @@
+{
+  "category": "bottle",
+  "strategy": "simclr",
+  "checkpoint_tag": "latest",
+  "auroc": 0.9571428571428572,
+  "pro": 0.6674637809371416,
+  "n_test_images": 83,
+  "n_anomalous": 63
+}

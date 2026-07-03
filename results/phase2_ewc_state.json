@@ -1,0 +1,57 @@
+{
+  "completed_tasks": [
+    "bottle",
+    "cable",
+    "leather"
+  ],
+  "records": [
+    {
+      "strategy": "ewc",
+      "trained_through": "bottle",
+      "trained_through_idx": 0,
+      "eval_category": "bottle",
+      "auroc": 1.0,
+      "pro": 0.8999498450758192
+    },
+    {
+      "strategy": "ewc",
+      "trained_through": "cable",
+      "trained_through_idx": 1,
+      "eval_category": "bottle",
+      "auroc": 1.0,
+      "pro": 0.896312656803302
+    },
+    {
+      "strategy": "ewc",
+      "trained_through": "cable",
+      "trained_through_idx": 1,
+      "eval_category": "cable",
+      "auroc": 0.7228260869565216,
+      "pro": 0.8110155742260666
+    },
+    {
+      "strategy": "ewc",
+      "trained_through": "leather",
+      "trained_through_idx": 2,
+      "eval_category": "bottle",
+      "auroc": 0.9936507936507937,
+      "pro": 0.8921627066623249
+    },
+    {
+      "strategy": "ewc",
+      "trained_through": "leather",
+      "trained_through_idx": 2,
+      "eval_category": "cable",
+      "auroc": 0.6516116941529234,
+      "pro": 0.7561503610238197
+    },
+    {
+      "strategy": "ewc",
+      "trained_through": "leather",
+      "trained_through_idx": 2,
+      "eval_category": "leather",
+      "auroc": 0.9979619565217391,
+      "pro": 0.9012852246786859
+    }
+  ]
+}

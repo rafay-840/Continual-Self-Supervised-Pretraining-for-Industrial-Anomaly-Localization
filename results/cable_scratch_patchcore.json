@@ -1,0 +1,9 @@
+{
+  "category": "cable",
+  "strategy": "scratch",
+  "checkpoint_tag": null,
+  "auroc": 0.6218140929535231,
+  "pro": 0.5181608465821574,
+  "n_test_images": 150,
+  "n_anomalous": 92
+}

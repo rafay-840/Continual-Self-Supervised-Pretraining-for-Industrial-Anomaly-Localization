@@ -216,6 +216,8 @@ Strategies can be run independently in any order.
 
 ### Phase 1 — AUROC and PRO
 
+> Source files: `bottle_*.json`, `cable_*.json`, `leather_*.json` on Google Drive
+
 | Category | Scratch | ImageNet | SimCLR-100ep | SimCLR-300ep |
 |----------|:-------:|:--------:|:------------:|:------------:|
 | Bottle (AUROC) | 0.949 | **1.000** | 0.962 | 0.996 |
@@ -241,6 +243,8 @@ Strategies can be run independently in any order.
 > † **Key finding:** Absence-type defects change global spatial arrangement without changing any individual local patch appearance. Patch-based nearest-neighbor detection cannot detect these regardless of pretraining strategy. Future work should incorporate global structural descriptors.
 
 ### Phase 2 — Detailed Continual Learning Results
+
+> Source files: `phase2_*_summary.json` + `phase2_bwt_comparison.xlsx` on Google Drive
 
 | Strategy | BWT | Bottle (just-learned) | Bottle (end-of-stream) | Cable (just-learned) | Cable (end-of-stream) |
 |----------|:---:|:---------------------:|:----------------------:|:--------------------:|:---------------------:|
@@ -338,6 +342,46 @@ def get_augmentation(category: str):
 | Repository & README | ✅ Co-author | ✅ Primary |
 
 Both members contributed equally to overall experimental design, result interpretation, and paper revision.
+
+---
+
+## Project Materials
+
+All experiment outputs, cached results, and model checkpoints are available on Google Drive:
+
+🗂️ **[Project Drive Folder](https://drive.google.com/drive/folders/1twuT8QpoW-m4MC9r8dNy-KR3DPeKTtdc?usp=sharing)**
+
+The Drive folder contains the following result files:
+
+**Phase 1 — PatchCore Evaluation Results (JSON)**
+
+| File | Description |
+|------|-------------|
+| `bottle_imagenet_patchcore.json` | Bottle — ImageNet backbone AUROC + PRO |
+| `bottle_scratch_patchcore.json` | Bottle — Random init baseline AUROC + PRO |
+| `bottle_simclr_patchcore.json` | Bottle — SimCLR 100ep + 300ep AUROC + PRO |
+| `cable_imagenet_patchcore.json` | Cable — ImageNet backbone AUROC + PRO |
+| `cable_scratch_patchcore.json` | Cable — Random init baseline AUROC + PRO |
+| `cable_simclr_patchcore.json` | Cable — SimCLR 100ep + 300ep AUROC + PRO |
+| `leather_imagenet_patchcore.json` | Leather — ImageNet backbone AUROC + PRO |
+| `leather_scratch_patchcore.json` | Leather — Random init baseline AUROC + PRO |
+| `leather_simclr_patchcore.json` | Leather — SimCLR 100ep + 300ep AUROC + PRO |
+
+**Phase 2 — Continual Learning Results (JSON + Excel)**
+
+| File | Description |
+|------|-------------|
+| `phase2_naive_continual_summary.json` | Per-task AUROC after naive sequential fine-tuning |
+| `phase2_naive_stream_state.json` | Resume checkpoint state for naive stream |
+| `phase2_ewc_summary.json` | Per-task AUROC under EWC (λ=100) |
+| `phase2_ewc_state.json` | Resume checkpoint state for EWC stream |
+| `phase2_replay_summary.json` | Per-task AUROC under Coreset Replay |
+| `phase2_replay_state.json` | Resume checkpoint state for Replay stream |
+| `phase2_packnet_summary.json` | Per-task AUROC under PackNet (50% pruning/task) |
+| `phase2_packnet_state.json` | Resume checkpoint state for PackNet stream |
+| `phase2_bwt_comparison.xlsx` | BWT summary comparison across all four strategies |
+
+> All JSON result files are loaded automatically by Notebooks 3–5. If a result file already exists on Drive, the notebook **skips recomputation and loads from cache** — saving significant GPU time on Colab. State files enable disconnection-tolerant resumption mid-stream.
 
 ---
 

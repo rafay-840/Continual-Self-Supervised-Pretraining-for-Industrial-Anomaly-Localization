@@ -1,0 +1,9 @@
+{
+  "category": "cable",
+  "strategy": "imagenet",
+  "checkpoint_tag": null,
+  "auroc": 0.7381934032983508,
+  "pro": 0.8263096858260859,
+  "n_test_images": 150,
+  "n_anomalous": 92
+}

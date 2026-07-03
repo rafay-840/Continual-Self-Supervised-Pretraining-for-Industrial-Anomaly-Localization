@@ -1,0 +1,9 @@
+{
+  "category": "cable",
+  "strategy": "simclr",
+  "checkpoint_tag": "latest",
+  "auroc": 0.5925787106446777,
+  "pro": 0.5967688991234104,
+  "n_test_images": 150,
+  "n_anomalous": 92
+}

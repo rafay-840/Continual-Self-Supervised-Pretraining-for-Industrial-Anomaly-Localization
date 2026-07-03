@@ -1,0 +1,9 @@
+{
+  "category": "bottle",
+  "strategy": "scratch",
+  "checkpoint_tag": null,
+  "auroc": 0.9492063492063492,
+  "pro": 0.703234340961371,
+  "n_test_images": 83,
+  "n_anomalous": 63
+}

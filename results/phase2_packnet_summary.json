@@ -1,0 +1,55 @@
+{
+  "strategy": "packnet",
+  "prune_ratio": 0.5,
+  "bwt": -0.07335260940958094,
+  "records": [
+    {
+      "strategy": "packnet",
+      "trained_through": "bottle",
+      "trained_through_idx": 0,
+      "eval_category": "bottle",
+      "auroc": 1.0,
+      "pro": 0.9046855627879012
+    },
+    {
+      "strategy": "packnet",
+      "trained_through": "cable",
+      "trained_through_idx": 1,
+      "eval_category": "bottle",
+      "auroc": 0.9992063492063492,
+      "pro": 0.9000467530538641
+    },
+    {
+      "strategy": "packnet",
+      "trained_through": "cable",
+      "trained_through_idx": 1,
+      "eval_category": "cable",
+      "auroc": 0.7556221889055472,
+      "pro": 0.8202797414707406
+    },
+    {
+      "strategy": "packnet",
+      "trained_through": "leather",
+      "trained_through_idx": 2,
+      "eval_category": "bottle",
+      "auroc": 0.9904761904761905,
+      "pro": 0.8931173268790388
+    },
+    {
+      "strategy": "packnet",
+      "trained_through": "leather",
+      "trained_through_idx": 2,
+      "eval_category": "cable",
+      "auroc": 0.6184407796101948,
+      "pro": 0.7521327820608724
+    },
+    {
+      "strategy": "packnet",
+      "trained_through": "leather",
+      "trained_through_idx": 2,
+      "eval_category": "leather",
+      "auroc": 0.9976222826086957,
+      "pro": 0.9039650428834902
+    }
+  ]
+}
