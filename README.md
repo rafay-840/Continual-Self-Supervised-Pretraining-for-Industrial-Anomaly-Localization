@@ -417,4 +417,4 @@ This project is released under the [MIT License](LICENSE).
 
 ---
 
-<p align="center">Made with 🔬 at the University of Verona · MSc Artificial Intelligence · 2025</p>
+<p align="center">Made with 🔬 at the University of Verona · MSc Artificial Intelligence · 2026</p>
